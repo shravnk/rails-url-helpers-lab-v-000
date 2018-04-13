@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     else
       @student.active = true
     end
-    render "/students/#{@student.id}"
+    activate_student(@student)
   end
   
   private

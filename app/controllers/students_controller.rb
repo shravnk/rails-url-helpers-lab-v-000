@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     else
       @student.active = true
     end
-    activate_student(@student)
+    activate_student_path(@student)
   end
   
   private
